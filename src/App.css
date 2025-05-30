@@ -1,0 +1,257 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.nav-menu {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.nav-menu h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-bottom: 10px;
+}
+
+.nav-menu a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+  background-color: #34495e;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f6fa;
+}
+
+.home {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Common styles for all examples */
+section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Form styles */
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Todo list styles */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Example specific styles */
+.jsx-overview .example,
+.component-example .example,
+.props-example .example,
+.event-handling .example,
+.state-management .example,
+.conditional-rendering .example,
+.list-and-keys .example {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Hover box styles */
+.hover-box {
+  padding: 20px;
+  background: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.hover-box.hovered {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+/* Todo card styles */
+.todo-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.todo-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* User form styles */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+/* Counter styles */
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button group styles */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Role section styles */
+.role-section select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Admin panel styles */
+.admin-panel,
+.user-panel {
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.admin-panel {
+  background: #e3f2fd;
+  border: 1px solid #2196f3;
+}
+
+.user-panel {
+  background: #f5f5f5;
+  border: 1px solid #9e9e9e;
+}
