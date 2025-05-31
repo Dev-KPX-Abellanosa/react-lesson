@@ -7,6 +7,9 @@ import EventHandling from './components/EventHandling'
 import StateManagement from './components/StateManagement'
 import ConditionalRendering from './components/ConditionalRendering'
 import ListAndKeys from './components/ListAndKeys'
+import CustomHooks from './components/CustomHooks'
+import ContextAPI from './components/ContextAPI'
+import UseEffectAndMemo from './components/UseEffectAndMemo'
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
             <li><Link to="/state-management">State Management</Link></li>
             <li><Link to="/conditional-rendering">Conditional Rendering</Link></li>
             <li><Link to="/list-keys">List & Keys</Link></li>
+            <li><Link to="/custom-hooks">Custom Hooks</Link></li>
+            <li><Link to="/context-api">Context API</Link></li>
+            {/* <li><Link to="/use-effect-memo">useEffect & useMemo</Link></li> */}
           </ul>
         </nav>
         <main className="content">
@@ -40,6 +46,9 @@ function App() {
             <Route path="/state-management" element={<StateManagement />} />
             <Route path="/conditional-rendering" element={<ConditionalRendering />} />
             <Route path="/list-keys" element={<ListAndKeys />} />
+            <Route path="/custom-hooks" element={<CustomHooks />} />
+            <Route path="/context-api" element={<ContextAPI />} />
+            <Route path="/use-effect-memo" element={<UseEffectAndMemo />} />
           </Routes>
         </main>
       </div>

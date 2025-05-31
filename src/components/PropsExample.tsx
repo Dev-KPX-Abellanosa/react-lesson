@@ -23,7 +23,7 @@ interface CardProps {
   children: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ title, children }) => {
+const Card = ({ title, children }: CardProps) => {
   return (
     <div className="card">
       <h2>{title}</h2>
