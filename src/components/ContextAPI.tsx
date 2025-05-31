@@ -1,7 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 import type { ReactNode } from 'react';
 
-// Create a context
 interface ThemeContextType {
   theme: string;
   toggleTheme: () => void;
@@ -9,7 +8,6 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-// Theme Provider Component
 const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState('light');
 
@@ -24,7 +22,7 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// Custom hook to use the theme context
+
 const useTheme = () => {
   const context = useContext(ThemeContext);
   if (context === undefined) {
@@ -33,7 +31,7 @@ const useTheme = () => {
   return context;
 };
 
-// Themed Button Component
+
 const ThemedButton = () => {
   const { theme, toggleTheme } = useTheme();
   
