@@ -12,6 +12,8 @@ import ListAndKeys from './components/ListAndKeys'
 import CustomHooks from './components/CustomHooks'
 import ContextAPI from './components/ContextAPI'
 import UseEffectAndMemo from './components/UseEffectAndMemo'
+import UseMemoAndCallback from './components/UseMemoAndCallback'
+import UseCallbackExample from './components/UseCallbackExample'
 
 const AppContent = () => {
   const { theme, toggleTheme } = useTheme();
@@ -43,9 +45,12 @@ const AppContent = () => {
           <li><Link to="/list-keys">List & Keys</Link></li>
           <li><Link to="/custom-hooks">Custom Hooks</Link></li>
           <li><Link to="/context-api">Context API</Link></li>
+          <li><Link to="/use-memo">useMemo</Link></li>
+          <li><Link to="/use-callback">useCallback</Link></li>
           {/* <li><Link to="/use-effect-memo">useEffect & useMemo</Link></li> */}
         </ul>
       </nav>
+      
       <main className="content">
         <Routes>
           <Route path="/" element={
@@ -63,6 +68,8 @@ const AppContent = () => {
           <Route path="/list-keys" element={<ListAndKeys />} />
           <Route path="/custom-hooks" element={<CustomHooks />} />
           <Route path="/context-api" element={<ContextAPI />} />
+          <Route path="/use-memo" element={<UseMemoAndCallback />} />
+          <Route path="/use-callback" element={<UseCallbackExample />} />
           <Route path="/use-effect-memo" element={<UseEffectAndMemo />} />
         </Routes>
       </main>
